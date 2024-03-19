@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from '@heroicons/react/24/solid';
 import { Apple } from './icons/Apple';
 import React from 'react';
+import { navigate } from 'gatsby';
 
 type BackgroundTypes = 'dark' | 'light';
 
@@ -31,6 +32,9 @@ const DownloadButton = ({ type }: Props) => {
       className={`flex items-center rounded-xl px-4 overflow-hidden duration-300 ${backgroundColor(
         type
       )} h-[60px] group  ml-2 cursor-pointer shadow-md hover:shadow-xl`}
+      onClick={() =>
+        navigate('https://apps.apple.com/gb/app/sessions/id6470125837')
+      }
     >
       <span className="transition-all gap-3 w-48  flex  duration-300 group-hover:translate-x-[-40px] ease-out">
         <span
