@@ -48,8 +48,8 @@ const features: Feature[] = [
 
 const FeatureSection = () => {
   return (
-    <section className="max-h-[400px] h-[600px] flex items-center justify-center">
-      <div className="flex items-center justify-center gap-6">
+    <section className="h-[600px] sm:h-[100%] flex items-center justify-center">
+      <div className="grid items-center justify-center gap-6 md:flex md:flex-wrap">
         {features.map((feature: Feature) => {
           return (
             <>
