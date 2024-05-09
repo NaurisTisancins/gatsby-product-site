@@ -5,13 +5,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { navigate } from 'gatsby';
 
 import '../styles/animations.css';
 
 const NavBar = () => {
   return (
-    <div className="flex fixed top-0 w-full  h-[100px] justify-center items-center backdrop-blur-md shadow-md hover:shadow-lg duration-500 transition-all">
+    <div className="flex z-10 fixed top-0 w-full  h-[100px] justify-center items-center backdrop-blur-md shadow-md hover:shadow-lg duration-500 transition-all">
       <div className="max-w-[1200px] min-w-[80%]  flex items-center justify-between">
         <BrandLogo />
         <NavigationLinks />
